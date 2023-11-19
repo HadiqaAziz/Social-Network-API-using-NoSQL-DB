@@ -14,7 +14,7 @@ const UserSchema = new Schema({
     unique: true,
     trim: true,
     lowercase: true,
-    // Source for Mongoose matching validation: https://mongoosejs.com/docs/schematypes.html#string-validators
+    //Source for Mongoose matching validation: https://mongoosejs.com/docs/schematypes.html#string-validators
     match: [ 
     /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/,
     "Please enter a valid email address",
