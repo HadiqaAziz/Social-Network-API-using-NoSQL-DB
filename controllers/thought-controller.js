@@ -106,6 +106,7 @@ removeReaction : async ({ params }, res) => {
         console.error(error);
         return res.json(error);
     }
-}
+    },
+};  
 
-module.exports = thoughtController;
+module.exports = ThoughtController;
