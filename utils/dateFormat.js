@@ -1,20 +1,20 @@
-const addDateSuffix = (date) => {
-  let dateStr = date.toString();
+const addDateSuff = (date) => {
+  let dateString = date.toString();
 
   // to get last character of date string
-  const lastChar = dateStr.charAt(dateStr.length - 1);
+  const lastChar = dateString.charAt(dateString.length - 1);
 
-  if (lastChar === "1" && dateStr !== "11") {
-    dateStr = `${dateStr}st`;
-  } else if (lastChar === "2" && dateStr !== "12") {
-    dateStr = `${dateStr}nd`;
-  } else if (lastChar === "3" && dateStr !== "13") {
-    dateStr = `${dateStr}rd`;
+  if (lastChar === "1" && dateString !== "11") {
+    dateString = `${dateSting}st`;
+  } else if (lastChar === "2" && dateString !== "12") {
+    dateString = `${dateString}nd`;
+  } else if (lastChar === "3" && dateString !== "13") {
+    dateString = `${dateString}rd`;
   } else {
-    dateStr = `${dateStr}th`;
+    dateString = `${dateString}th`;
   }
 
-  return dateStr;
+  return dateString;
 };
 
 // function to format a timestamp, accepts the timestamp and an `options` object as optional parameters
@@ -59,12 +59,12 @@ module.exports = (
   const dateObj = new Date(timestamp);
   const formattedMonth = months[dateObj.getMonth()];
 
-  let dayOfMonth;
+  let monthday;
 
   if (dateSuffix) {
-    dayOfMonth = addDateSuffix(dateObj.getDate());
+    monthday = addDateSuff(dateObj.getDate());
   } else {
-    dayOfMonth = dateObj.getDate();
+    monthday = dateObj.getDate();
   }
 
   const year = dateObj.getFullYear();
@@ -92,7 +92,7 @@ module.exports = (
     periodOfDay = "am";
   }
 
-  const formattedTimeStamp = `${formattedMonth} ${dayOfMonth}, ${year} at ${hour}:${minutes} ${periodOfDay}`;
+  const formattedTimeStamp = `${formattedMonth} ${monthday}, ${year} at ${hour}:${minutes} ${periodOfDay}`;
 
   return formattedTimeStamp;
 };
