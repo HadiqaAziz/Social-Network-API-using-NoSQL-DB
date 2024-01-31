@@ -1,9 +1,5 @@
-# Social-Network-API-using-NoSQL-DB
-This repository contains files of Module 18 Challenge
-# User Story
-AS A social media startup
-I WANT an API for my social network that uses a NoSQL database
-SO THAT my website can handle large amounts of unstructured data
+# Social Network API using NoSQL DB
+As a startup in the realm of social media, I need an API for my social network that leverages a NoSQL database. This is crucial to enable my website to efficiently handle large volumes of unstructured data.
 # Acceptance Criteria
 GIVEN a social network API
 WHEN I enter the command to invoke the application
