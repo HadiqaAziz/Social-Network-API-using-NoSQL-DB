@@ -1,15 +1,56 @@
 # Social Network API using NoSQL DB
-As a startup in the realm of social media, I need an API for my social network that leverages a NoSQL database. This is crucial to enable my website to efficiently handle large volumes of unstructured data.
-# Acceptance Criteria
-GIVEN a social network API
-WHEN I enter the command to invoke the application
-THEN my server is started and the Mongoose models are synced to the MongoDB database
-WHEN I open API GET routes in Insomnia for users and thoughts
-THEN the data for each of these routes is displayed in a formatted JSON
-WHEN I test API POST, PUT, and DELETE routes in Insomnia
-THEN I am able to successfully create, update, and delete users and thoughts in my database
-WHEN I test API POST and DELETE routes in Insomnia
-THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 
-# Video Link:
-https://drive.google.com/file/d/1DrV-UuTjL7JNkltRTRXWSEECJZvgj5Jx/view
+This repository contains the files for a Social Network API designed to work with a NoSQL database. Ideal for social media startups, this API utilizes MongoDB to manage and handle large volumes of unstructured data efficiently.
+
+## Features
+
+- **API Endpoints**: Access and manage users, thoughts, reactions, and friendships.
+- **Database Integration**: Mongoose models sync with a MongoDB database.
+- **CRUD Operations**: Create, read, update, and delete users, thoughts, and reactions.
+- **Friend Management**: Add and remove friends from a user's friend list.
+
+## How to Use
+
+1. **Clone the Repository**
+
+   Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/HadiqaAziz/Social-Network-API-using-NoSQL-DB.git
+   cd Social-Network-API-using-NoSQL-DB
+   ```
+
+2. **Install Dependencies**
+
+   Install the required dependencies using npm:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the Server**
+
+   Start the server and sync Mongoose models with MongoDB:
+
+   ```bash
+   npm start
+   ```
+
+4. **Test API Endpoints**
+
+   Use Insomnia (or another API testing tool) to test the following routes:
+
+   - **GET Routes**: Fetch users and thoughts in JSON format.
+   - **POST, PUT, DELETE Routes**: Create, update, and delete users, thoughts, reactions, and friendships.
+
+5. **View API Documentation**
+
+   Ensure the API routes work as expected by referring to the provided video link for a demonstration:
+
+   [API Demonstration Video](https://drive.google.com/file/d/1DrV-UuTjL7JNkltRTRXWSEECJZvgj5Jx/view)
+
+## Contributing
+
+Enjoy building and managing your social network with this API! and Feel free to contribute to the project by opening an issue or submitting a pull request.
+
+
